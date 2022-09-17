@@ -23,6 +23,51 @@ ul
   font-size:16px;
 }
 
+.btn-romaquil {
+  color: #42554d;
+  background: #ffffff;
+  padding: 12px 16px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.btn-romaquil:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(115deg,#4fcf70,#fad648,#a767e5,#12bcfe,#44ce7b);
+  background-size: 50% 100%;
+}
+
+.btn-romaquil span {
+  position: relative;
+  z-index: 2;
+  padding: 0.875rem 0;
+  font-size: 1.1rem;
+  align-items: center;
+  background: #000;
+  border-radius: 3px;
+  display: block;
+  justify-content: center;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+.modal-promo {
+  background: #42554d;
+  color: #ffffff;
+}
+
+.goldenquil {
+  color: #FFB03B;
+  font-family: 'BioRhyme', sans-serif;
+}
+
 .logo-wrapper {
   max-width: 200px;
 }
@@ -247,3 +292,70 @@ ul
 #sendmessage.show, #errormessage.show, .show {
     display:block;
 }
+
+@media screen {
+  .btn-romaquil {
+      margin: 0 auto;
+      width: calc(100% - 2.75rem);
+      text-align: center;
+      position: relative;
+      border-radius: 6px;
+      box-sizing: border-box;
+      color: #42554d;
+      display: block;
+      z-index: 2;
+      overflow: hidden;
+      padding: 3px;
+      text-decoration: none;
+      font-weight: 600;
+  }
+  .btn-romaquil:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 100%;
+      background: linear-gradient(115deg, #4fcf70, #fad648, #44ce7b);
+      background-size: 50% 100%;
+      animation: rainbowSlide 0.75s linear infinite;
+  }
+  .btn-romaquil span {
+      position: relative;
+      z-index: 2;
+      padding: 0.875rem 0;
+      font-size: 1.1rem;
+      align-items: center;
+      background: #fafafa;
+      border-radius: 3px;
+      display: block;
+      justify-content: center;
+      box-sizing: border-box;
+      height: 100%;
+  }
+
+  .btn-romaquil:hover,btn-romaquil:focus,btn-romaquil:active {
+    cursor:pointer;
+    color: #42554d;
+    text-decoration: none;
+  }
+
+}
+@keyframes rainbowSlide {
+  to {
+      transform: translateX(-50%);
+  }
+}
+
+
+.reel-promo {
+  margin: 0 auto;
+  width: 160px;
+  height: 160px;
+  border-radius: 50rem;
+  background-image: url(./romaquil-reel.gif);
+  background-size: 220px 220px;
+  background-position: -1.2rem -1.85rem;
+  background-repeat: no-repeat;
+}
+
